@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UpdateController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="265.0" style="-fx-background-color: #ff6347;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="19.0" layoutY="147.0" prefHeight="17.0" prefWidth="228.0" text="INSA" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="27.0" />
+               </font>
+            </Label>
+            <Line endX="80.0" layoutX="134.0" layoutY="190.0" startX="-81.0" stroke="WHITE" strokeWidth="2.0" />
+            <Label alignment="CENTER" layoutX="19.0" layoutY="198.0" prefHeight="17.0" prefWidth="228.0" text="Systèmes Embarqués" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="17.0" />
+               </font>
+            </Label>
+            <Circle fill="#ffffff00" layoutX="133.0" layoutY="191.0" radius="100.0" stroke="#f2eded" strokeType="INSIDE" />
+         </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="335.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="39.0" layoutY="74.0" text="Nouveau Nom :" />
+                <TextField fx:id="nouveauNomTextField" layoutX="150.0" layoutY="74.0" promptText="Nouveau Nom" />
+                <Label layoutX="39.0" layoutY="129.0" text="Nouveau Prénom :" />
+                <TextField fx:id="nouveauPrenomTextField" layoutX="150.0" layoutY="129.0" promptText="Nouveau Prénom" />
+                <Label layoutX="39.0" layoutY="184.0" text="Nouvelle Date :" />
+                <TextField fx:id="nouvelleDateNaissanceTextField" layoutX="150.0" layoutY="180.0" promptText="Nouvelle Date de Naissance" />
+                <Label layoutX="39.0" layoutY="234.0" text="Nouveaux Loisirs :" />
+                <TextField fx:id="nouveauxLoisirsTextField" layoutX="150.0" layoutY="232.0" promptText="Nouveaux Loisirs" />
+                <Label layoutX="39.0" layoutY="284.0" text="Mot de Passe :" />
+                <TextField fx:id="nouveauMotDePasseTextField" layoutX="150.0" layoutY="280.0" promptText="Nouveau Mot de Passe" />
+                <Button layoutX="122.0" layoutY="331.0" mnemonicParsing="false" onAction="#sauvegarderDansBaseDeDonnees" text="Sauvegarder" />
+            <Label alignment="CENTER" layoutX="64.0" layoutY="27.0" prefHeight="17.0" prefWidth="228.0" text="Mise à Jour" textFill="#ff6347">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="24.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="0.38823530077934265" blue="0.27843138575553894" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

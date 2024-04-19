@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfileController">
+   <children>
+      <Label layoutX="41.0" layoutY="42.0" text="Nom :" />
+      <Label fx:id="nomLabel" layoutX="150.0" layoutY="43.0" />
+      <Label layoutX="41.0" layoutY="97.0" text="Prénom :" />
+      <Label fx:id="prenomLabel" layoutX="150.0" layoutY="98.0" />
+      <Label layoutX="37.0" layoutY="157.0" text="Date de Naissance :" />
+      <Label fx:id="dateNaissanceLabel" layoutX="189.0" layoutY="153.0" />
+      <Label layoutX="38.0" layoutY="206.0" text="Loisirs :" />
+      <Label fx:id="loisirsLabel" layoutX="150.0" layoutY="203.0" />
+      <Label layoutX="35.0" layoutY="255.0" text="Mot de passe :" />
+      <Label fx:id="motDePasseLabel" layoutX="150.0" layoutY="253.0" />
+      <Button layoutX="75.0" layoutY="319.0" mnemonicParsing="false" onAction="#miseAJourUtilisateur" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #ff6347;" text="Mise à Jour" />
+      <AnchorPane layoutX="272.0" layoutY="7.0" prefHeight="400.0" prefWidth="326.0">
+         <children>
+            <AnchorPane layoutY="-7.0" prefHeight="416.0" prefWidth="327.0" style="-fx-background-color: #ff6347;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label alignment="CENTER" layoutX="50.0" layoutY="158.0" prefHeight="17.0" prefWidth="228.0" text="INSA" textFill="WHITE">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="54.0" layoutY="208.0" prefHeight="17.0" prefWidth="228.0" text="Systèmes Embarqués" textFill="WHITE">
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#ffffff00" layoutX="168.0" layoutY="208.0" radius="100.0" stroke="#f2eded" strokeType="INSIDE" />
+                  <Line endX="80.0" layoutX="169.0" layoutY="200.0" startX="-81.0" stroke="WHITE" strokeWidth="2.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

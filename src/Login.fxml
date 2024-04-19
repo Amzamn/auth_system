@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #ff6347;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutY="118.0" prefHeight="17.0" prefWidth="228.0" text="INSA" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="27.0" />
+               </font>
+            </Label>
+            <Line endX="80.0" layoutX="114.0" layoutY="160.0" startX="-81.0" stroke="WHITE" strokeWidth="2.0" />
+            <Label alignment="CENTER" layoutY="172.0" prefHeight="17.0" prefWidth="228.0" text="Systèmes Embarqués" textFill="WHITE">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="17.0" />
+               </font>
+            </Label>
+            <Circle fill="#ffffff00" layoutX="114.0" layoutY="172.0" radius="100.0" stroke="#f2eded" strokeType="INSIDE" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="335.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="26.0" layoutY="67.0" prefHeight="17.0" prefWidth="228.0" text="Login" textFill="#ff6347">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="24.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="0.38823530077934265" blue="0.27843138575553894" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Label>
+            <Label layoutX="19.0" layoutY="136.0" text="Username" textFill="#ff6347" AnchorPane.leftAnchor="19.0">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="187.0" text="Password" textFill="TOMATO">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="104.0" layoutY="132.0" promptText="username" />
+            <PasswordField fx:id="passwordField" layoutX="104.0" layoutY="184.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="34.0" layoutY="245.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: #ff6347;" text="Envoyer" />
+            <Button fx:id="inscriptionButton" layoutX="34.0" layoutY="300.0" mnemonicParsing="false" onAction="#inscriptionButtonAction" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: #ff6347;" text="S'inscrire" />
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="55.0" layoutY="103.0" prefHeight="19.0" prefWidth="175.0" textFill="#da2020">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Glow level="0.22" />
+         </effect>
+      </AnchorPane>
+   </right>
+</BorderPane>
